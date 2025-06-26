@@ -31,10 +31,16 @@
       margin: 0.5rem 0 0;
     }
 
+    .nav-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
     nav {
       text-align: center;
       background-color: rgba(0, 0, 0, 0.6);
       padding: 0.75rem;
+      border-radius: 8px;
     }
 
     nav a {
@@ -42,16 +48,27 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #1f3b35;
+      text-decoration: none;
     }
 
     main {
       max-width: 700px;
       margin: 0 auto;
       padding: 2rem;
+    }
+
+    .content-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 8px;
+      color: #ffffff;
     }
 
     section {
@@ -89,31 +106,35 @@
     <h1>North Node Tech</h1>
   </header>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/services/">Services</a>
-  <a href="/contact/">Contact</a>
-</nav>
+  <div class="nav-container">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/services/">Services</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
 
   <main>
-    <section>
-      <h2>About North Node Tech</h2>
-      <p>
-        North Node Tech is a reflection of over a decade of hands-on experience in building, securing, and scaling IT infrastructure. Founded by Shawn Tavares, a seasoned systems engineer, the brand represents a commitment to reliable cloud consulting, automation through scripting, and grounded infrastructure design. 
-      </p>
-      <p>
-        From managing datacenter systems and SAN environments to deploying Microsoft Intune and Azure solutions, North Node Tech bridges the gap between legacy systems and future-ready architecture. Whether you're looking to modernize, automate, or secure your environment, North Node Tech brings technical clarity with a calm, forest-rooted mindset.
-      </p>
-    </section>
+    <div class="content-box">
+      <section>
+        <h2>About North Node Tech</h2>
+        <p>
+          North Node Tech is a reflection of over a decade of hands-on experience in building, securing, and scaling IT infrastructure. Founded by Shawn Tavares, a seasoned systems engineer, the brand represents a commitment to reliable cloud consulting, automation through scripting, and grounded infrastructure design. 
+        </p>
+        <p>
+          From managing datacenter systems and SAN environments to deploying Microsoft Intune and Azure solutions, North Node Tech bridges the gap between legacy systems and future-ready architecture. Whether you're looking to modernize, automate, or secure your environment, North Node Tech brings technical clarity with a calm, forest-rooted mindset.
+        </p>
+      </section>
 
-    <section>
-      <h2>Inspired by Nature</h2>
-      <p>
-        Just like a forest ecosystem, I believe IT systems should be balanced, resilient, and quietly powerful. That’s why North Node Tech takes inspiration from nature’s architecture — layered, adaptive, and built to endure.
-      </p>
-      <img src="/assets/img/forest-desk.png" alt="Nature-inspired workspace" class="responsive" />
-    </section>
+      <section>
+        <h2>Inspired by Nature</h2>
+        <p>
+          Just like a forest ecosystem, I believe IT systems should be balanced, resilient, and quietly powerful. That’s why North Node Tech takes inspiration from nature’s architecture — layered, adaptive, and built to endure.
+        </p>
+        <img src="/assets/img/forest-desk.png" alt="Nature-inspired workspace" class="responsive" />
+      </section>
+    </div>
   </main>
 
   <footer>
