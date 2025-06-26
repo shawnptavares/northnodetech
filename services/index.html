@@ -32,9 +32,12 @@
     }
 
     nav {
+      max-width: 900px;
+      margin: 0 auto;
       text-align: center;
       background-color: rgba(0, 0, 0, 0.6);
       padding: 0.75rem;
+      border-radius: 8px;
     }
 
     nav a {
@@ -42,16 +45,27 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #1f3b35;
+      text-decoration: none;
     }
 
     main {
       max-width: 900px;
       margin: 0 auto;
       padding: 2rem;
+    }
+
+    .content-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 8px;
+      color: #ffffff;
     }
 
     section {
@@ -97,58 +111,60 @@
     <h1>North Node Tech</h1>
   </header>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/services/">Services</a>
-  <a href="/contact/">Contact</a>
-</nav>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/services/">Services</a>
+    <a href="/contact/">Contact</a>
+  </nav>
 
   <main>
-    <section>
-      <h2>What We Do</h2>
-      <p>North Node Tech offers deeply technical services rooted in practical infrastructure experience, modern security practices, and cloud-first thinking. Whether you're an enterprise looking to modernize, or a small organization navigating digital transformation, we can help.</p>
-    </section>
+    <div class="content-box">
+      <section>
+        <h2>What We Do</h2>
+        <p>North Node Tech offers deeply technical services rooted in practical infrastructure experience, modern security practices, and cloud-first thinking. Whether you're an enterprise looking to modernize, or a small organization navigating digital transformation, we can help.</p>
+      </section>
 
-    <section>
-      <h3>🔐 Infrastructure Hardening & Security</h3>
-      <ul>
-        <li>AppLocker policies & endpoint lockdowns</li>
-        <li>PKI & certificate-based authentication setup</li>
-        <li>Firewall, RADIUS, and VPN configuration</li>
-        <li>Microsoft Defender for Endpoint implementation</li>
-      </ul>
+      <section>
+        <h3>🔐 Infrastructure Hardening & Security</h3>
+        <ul>
+          <li>AppLocker policies & endpoint lockdowns</li>
+          <li>PKI & certificate-based authentication setup</li>
+          <li>Firewall, RADIUS, and VPN configuration</li>
+          <li>Microsoft Defender for Endpoint implementation</li>
+        </ul>
 
-      <h3>☁️ Azure & Cloud Services</h3>
-      <ul>
-        <li>Azure AD, Intune (Endpoint Manager) deployment</li>
-        <li>Conditional Access & Compliance policies</li>
-        <li>Azure Virtual Desktop (AVD) and Nerdio deployment</li>
-        <li>Secure cloud proxy setup with zScaler or Azure App Proxy</li>
-      </ul>
+        <h3>☁️ Azure & Cloud Services</h3>
+        <ul>
+          <li>Azure AD, Intune (Endpoint Manager) deployment</li>
+          <li>Conditional Access & Compliance policies</li>
+          <li>Azure Virtual Desktop (AVD) and Nerdio deployment</li>
+          <li>Secure cloud proxy setup with zScaler or Azure App Proxy</li>
+        </ul>
 
-      <h3>🧰 Automation & Scripting</h3>
-      <ul>
-        <li>PowerShell scripting for infrastructure & endpoint automation</li>
-        <li>Custom tool creation for IT teams</li>
-        <li>Scheduled task management, logging, reporting</li>
-      </ul>
+        <h3>🧰 Automation & Scripting</h3>
+        <ul>
+          <li>PowerShell scripting for infrastructure & endpoint automation</li>
+          <li>Custom tool creation for IT teams</li>
+          <li>Scheduled task management, logging, reporting</li>
+        </ul>
 
-      <h3>🗂️ Systems Management</h3>
-      <ul>
-        <li>SCCM/MECM application packaging and deployment</li>
-        <li>Group Policy and Active Directory structuring</li>
-        <li>Intune Autopilot and hybrid-join strategies</li>
-        <li>Documentation and escalation toolkits</li>
-      </ul>
+        <h3>📒 Systems Management</h3>
+        <ul>
+          <li>SCCM/MECM application packaging and deployment</li>
+          <li>Group Policy and Active Directory structuring</li>
+          <li>Intune Autopilot and hybrid-join strategies</li>
+          <li>Documentation and escalation toolkits</li>
+        </ul>
 
-      <h3>📦 Virtualization & Disaster Recovery</h3>
-      <ul>
-        <li>VMware ESXi host deployment & optimization</li>
-        <li>Veeam Backup & SAN disaster recovery planning</li>
-        <li>Test lab and sandbox infrastructure design</li>
-      </ul>
-    </section>
+        <h3>📦 Virtualization & Disaster Recovery</h3>
+        <ul>
+          <li>VMware ESXi host deployment & optimization</li>
+          <li>Veeam Backup & SAN disaster recovery planning</li>
+          <li>Test lab and sandbox infrastructure design</li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer>
