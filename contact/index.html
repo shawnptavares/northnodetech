@@ -31,10 +31,16 @@
       margin: 0.5rem 0 0;
     }
 
+    .nav-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
     nav {
       text-align: center;
       background-color: rgba(0, 0, 0, 0.6);
       padding: 0.75rem;
+      border-radius: 8px;
     }
 
     nav a {
@@ -42,16 +48,33 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #1f3b35;
+      text-decoration: none;
     }
 
     main {
       max-width: 700px;
       margin: 0 auto;
       padding: 2rem;
+    }
+
+    .content-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     .contact-intro {
@@ -62,12 +85,7 @@
     }
 
     form {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 1.5rem;
-      border-radius: 8px;
-      color: #ffffff;
       width: 100%;
-      box-sizing: border-box;
     }
 
     label {
@@ -111,29 +129,32 @@
     <h1>North Node Tech</h1>
   </header>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/services/">Services</a>
-  <a href="/contact/">Contact</a>
-</nav>
+  <div class="nav-container">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/services/">Services</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
 
   <main>
-    <h2 style="text-align: center;">Contact Us</h2>
-    <p class="contact-intro">All of your needs are just 1 email away! 📬</p>
+    <div class="content-box">
+      <h2>Contact Us</h2>
+      <p class="contact-intro">All of your needs are just 1 email away! 📬</p>
+      <form action="https://formspree.io/f/xzzgknow" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
 
-    <form action="https://formspree.io/f/xzzgknow" method="POST">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required />
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
 
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required />
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </main>
 
   <footer>
